@@ -15,10 +15,6 @@ TubesFromSplines/
 	- (VTK) This is used to convert the splines in a 9-pt CSV Voro++ '%B' output file (generated
 		by 'voro_fill_stl') to 3D tubes, and output resultant STL
 
-stl_remesh/
-	- (VTK) Reduce triangle count in provided STL by X percentage. Used to reduce processing
-		time of other stages.
-
 ViewSTL/
 	- (VTK) just open STL & display in VTK render window
 
@@ -32,9 +28,5 @@ BETA (not working...)
 ------------
 convert_to_stl/
 	- (VTK) Reads in many formats and outputs an STL.
-
-make_stl_solid/
-	- (VTK) as it says
-
 
 
