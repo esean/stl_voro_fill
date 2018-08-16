@@ -1,6 +1,6 @@
-This project uses an input STL to generate an output STL which is the same form as the input STL, but filled with a cellular voronoi pattern.
+This project is based off [the Voro++ project](http://math.lbl.gov/voro++/). That code was modified and extended to take an input STL and generate an output STL which is the same form as the input STL, but filled with a cellular voronoi pattern.
 
-For more information, see the sw/readme.txt
+For more information about running the script, see sw/readme.txt
 
 For example, for this input STL (in examples/bunny.stl),
 ```
