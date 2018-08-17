@@ -82,16 +82,15 @@ If 'gnu-sed' was installed as 'gnu-sed', you need to make a symlink so it can be
 $ sudo ln -s /usr/local/opt/gnu-sed/bin/sed /usr/local/bin/gsed
 ```
 
-Then make
+Then execute make.sh to compile & install all required software. You will need to manually launch
+the XQuartz installer opened in a Finder window. You will then have to log out and log back in to
+activate those changes. Once logged in again, XQuartz is used to open xterm windows called by
+the running scripts.
 ```
 $ ./make.sh
 ```
 
-You will need to manually launch the XQuartz installer. You will then have to log out and log back
-in to activate those changes. Once logged in again, launch XQuartz so xterm windows can be opened
-by the running scripts
-
-Copy admesh library,
+Finally copy admesh library,
 ```
 $ sudo cp bin/.libs/libadmesh.1.dylib /usr/local/lib
 ```
@@ -104,7 +103,7 @@ $ sudo cp bin/.libs/libadmesh.1.dylib /usr/local/lib
     admesh: GPL-2.0
     VTK: BSD
 
-Voro++ and VTK are linked together. Admesh is compiled and called as standalone app.
+Voro++ and VTK source is compiled together. Admesh is compiled as a standalone (none of it's source is linked or compiled into any program in this project). Admesh is executed by scripts in this project as a system call.
 
 
 # Notes:
