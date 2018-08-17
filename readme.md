@@ -21,4 +21,5 @@ ViewSTL examples/bunny.stl sw/out.stl-0.stl
 ![alt text](examples/bunny-voro-together.png)
 
 Then you print that output STL for fun!
+
 ![alt text](examples/3d_bunnies.png)
