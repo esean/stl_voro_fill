@@ -7,6 +7,9 @@ $ mkdir build
 $ cd build
 $ cmake -DVTK_DIR:PATH=$VTK_INSTALL_DIR/build ..
 $ make
+(Mac)
 $ cp ViewSTL.app/Contents/MacOS/ViewSTL $PCL_VORO_PROJDIR/sw/bin
+(Linux)
+$ cp ViewSTL $PCL_VORO_PROJDIR/sw/bin
 $ cd ..
-#$ ./build/ViewSTL.app/Contents/MacOS/ViewSTL cone.stl
+#$ ./build/ViewSTL cone.stl

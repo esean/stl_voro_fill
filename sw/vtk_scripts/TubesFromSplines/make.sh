@@ -5,5 +5,12 @@ if [ -z "$PCL_VORO_PROJDIR" ]; then
         exit 1
 fi
 
+cp_build()      # $1=project name
+{
+	is_linux.sh &&
+		cp build/$1 $PCL_VORO_PROJDIR/sw/bin ||
+		cp build/$1.app/Contents/MacOS/$1 $PCL_VORO_PROJDIR/sw/bin
+}
+
 make_vtk_app.sh && \
-cp build/TubesFromSplines.app/Contents/MacOS/TubesFromSplines $PCL_VORO_PROJDIR/sw/bin
+cp_build TubesFromSplines 

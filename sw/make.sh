@@ -21,8 +21,11 @@ pushd $PCL_VORO_PROJDIR/sw
 
 [ ! -d bin ] && mkdir bin
 
-# install xquzrtz
-open -W 3rd_party/XQuartz-2.7.11.dmg 
+# MacOS needs install xquartz
+is_linux.sh || {
+        # not linux, so assume mac
+        open -W 3rd_party/XQuartz-2.7.11.dmg 
+}
 
 # Make required tools first
 for dn in 3rd_party/admesh 3rd_party/voro++-0.4.6 3rd_party/VTK-7.1.0; do

@@ -7,5 +7,8 @@ $ mkdir build
 $ cd build
 $ cmake -DVTK_DIR:PATH=$VTK_INSTALL_DIR/build ..
 $ make
+(mac)
 $ cp TubesFromSplines.app/Contents/MacOS/TubesFromSplines $PCL_VORO_PROJDIR/sw/bin
+(linux)
+$ cp TubesFromSplines $PCL_VORO_PROJDIR/sw/bin
 

@@ -16,6 +16,13 @@ popup() {
 		EOF
 }
 
+# if linux?
+is_linux.sh && {
+	xmessage "$msg" &>/dev/null; df=$?
+	exit $df
+}
+
+# else mac
 s=`(popup 2>&1)`
 if echo "$s" | grep -q 'returned:OK'; then
 	#echo "OK"

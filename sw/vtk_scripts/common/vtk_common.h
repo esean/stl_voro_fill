@@ -34,6 +34,7 @@
 #include <numeric>
 #include <stdlib.h>
 #include <sys/stat.h>   // stat, does_file_exist()
+#include <signal.h>
 
 #define EXTRA_DEBUG 0 // 1=on
 

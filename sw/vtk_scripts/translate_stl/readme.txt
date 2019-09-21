@@ -8,4 +8,7 @@ $ cd build
 $ cmake -DVTK_DIR:PATH=$VTK_INSTALL_DIR/build ..
 $ make
 $ cd ..
+(mac)
 $ ./build/translate_stl.app/Contents/MacOS/translate_stl outer.stl 0 1 0
+(linux)
+$ ./build/translate_stl outer.stl 0 1 0
