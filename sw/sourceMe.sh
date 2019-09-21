@@ -4,7 +4,8 @@ called=$_
 sourceMesh_dir="`dirname ${BASH_SOURCE[0]}`"
 #----------
 
-export PCL_VORO_PROJDIR="$PWD/`dirname $sourceMesh_dir`"
+export PCL_VORO_PROJDIR="`dirname $sourceMesh_dir`"
+#export PCL_VORO_PROJDIR="$PWD/`dirname $sourceMesh_dir`"
 export VTK_INSTALL_DIR="$PCL_VORO_PROJDIR/sw/3rd_party/VTK-7.1.0"
 
 export PATH=$PCL_VORO_PROJDIR/sw/scripts:$PCL_VORO_PROJDIR/sw/bin:$PATH
